@@ -11,57 +11,75 @@
     <link rel="stylesheet" href="./output.css">
     <title>Church Website</title>
 </head>
-<body class="font-body">
+<body class="font-body animate-fade-in">
 
     <div class="xl:px-28 xl:drop-shadow-2xl">
         <div class="bg-[#6A5978] xl:px-28">
-            <div class="container mx-auto px-4 pt-4 pb-5 text-white md:flex md:items-center md:justify-between">
+            <div class="container mx-auto px-10 pt-4 pb-5 text-white md:flex md:items-center md:justify-between">
                 <div class="space-x-3 text-sm md:pt-3">
                     <span class="hover:text-slate-300 cursor-pointer hover:transition hover:ease-linear hover:duration-500">Home</span>
                     <span class="hover:text-slate-300 cursor-pointer">About Us</span>
                     <span class="hover:text-slate-300 cursor-pointer">Ministries</span>
                 </div>
                 <div class="flex pt-3 space-x-5">
-                    <i class="bi bi-facebook"></i>
-                    <i class="bi bi-twitter"></i>
-                    <i class="bi bi-instagram"></i>
-                    <i class="bi bi-linkedin"></i>
+                    <i class="bi bi-facebook" style="cursor: pointer;"></i>
+                    <i class="bi bi-twitter" style="cursor: pointer;"></i>
+                    <i class="bi bi-instagram" style="cursor: pointer;"></i>
+                    <i class="bi bi-linkedin" style="cursor: pointer;"></i>
                 </div>
             </div>
         </div>
 
         <div class="bg-white xl:px-28">
-            <div class="container mx-auto flex justify-between items-center p-3">
+            <div class="container mx-auto flex justify-between px-7 py-4">
                 <h1 class="text-2xl cursor-pointer">Mountain Of Great Mercy</h1>
-                <div class="border px-2 rounded-md text-slate-500 cursor-pointer lg:hidden drop-open">
+                <div class="border trigger px-2 rounded-md text-slate-500 cursor-pointer lg:hidden trigger-1">
                     <i class="bi bi-list" style="font-size: 30px;"></i>
                 </div>
+
                 <div class="hidden lg:block">
-                    <ul class="flex space-x-5">
+                    <ul class="flex space-x-10">
                         <li class="font-bold text-[#6A5978]"><a href="#">Home</a></li>
-                        <div class="flex items-center space-x-1">
-                            <li><a href="#">Ministries</a></li>
-                            <i class="bi bi-caret-down-fill" style="font-size: smaller; color: #6A5978;"></i>
-                        </div>
-                        <div class="flex items-center space-x-1">
-                            <li><a href="#">Sermons</a></li>
-                            <i class="bi bi-caret-down-fill" style="font-size: smaller; color: #6A5978;"></i>
-                        </div> 
+                        <li class="space-x-1 relative dropdown">
+                            <div class="cursor-pointer trigger">
+                                <a>Ministries</a>
+                                <i class="bi bi-caret-down-fill" style="font-size: smaller; color: #6A5978;"></i>
+                            </div>
+                            <ul class="bg-white animate-fade content hidden absolute left-0 top-full w-48 z-10 mt-4 py-4 font-medium rounded-sm box">
+                                <li class="hover:bg-[#6A5978] hover:text-white px-4 py-2"><a href="#">Outreach Ministry</a></li>
+                                <li class="hover:bg-[#6A5978] hover:text-white px-4 py-2"><a href="#">Men's Ministry</a></li>
+                                <li class="hover:bg-[#6A5978] hover:text-white px-4 py-2"><a href="#">Women's Ministry</a></li>
+                                <li class="hover:bg-[#6A5978] hover:text-white px-4 py-2"><a href="#">Children's Ministry</a></li>
+                                <li class="hover:bg-[#6A5978] hover:text-white px-4 py-2"><a href="#">Youth Ministry</a></li>
+                            </ul>
+                        </li>
+                        <li class="space-x-1 relative dropdown">
+                            <div class="cursor-pointer trigger">
+                                <a href="#">Sermons</a>
+                                <i class="bi bi-caret-down-fill" style="font-size: smaller; color: #6A5978;"></i>
+                            </div>
+                            <ul class="bg-white animate-fade content hidden absolute left-0 top-full w-40 z-10 mt-4 py-4 font-medium rounded-sm box">
+                                <li class="hover:bg-[#6A5978] hover:text-white px-4 py-2"><a href="#">Daily Sermon</a></li>
+                                <li class="hover:bg-[#6A5978] hover:text-white px-4 py-2"><a href="#">Music</a></li>
+                                <li class="hover:bg-[#6A5978] hover:text-white px-4 py-2"><a href="#">Audio</a></li>
+                                <li class="hover:bg-[#6A5978] hover:text-white px-4 py-2"><a href="#">Video</a></li>
+                            </ul>
+                        </li>
                         <li><a href="#">Events</a></li>
                         <li><a href="#">About</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul> 
                 </div>
             </div>
-            <div class="px-3 hidden drop-down">
-                <div class="container mx-auto space-y-5 pb-5">
+            <div class="hidden animate-fade content-1 lg:hidden">
+                <div class="container mx-auto px-7 space-y-5 pb-5">
                     <span class="font-bold tracking-wide">Home</span>
-                    <div>
-                        <div class="flex items-center space-x-1 hov">
+                    <div class="dropdown">
+                        <div class="flex items-center cursor-pointer trigger space-x-1">
                             <span><a href="#">Ministries</a></span>
                             <i class="bi bi-caret-down-fill" style="font-size: smaller; color: #6A5978;"></i>
                         </div>
-                        <div class="bg-white mt-4 pt-4 rounded-sm box hidden dis">
+                        <div class="bg-white content animate-fade hidden mt-4 pt-4 rounded-sm box">
                             <div class="px-5 pb-5 space-y-4 font-medium">
                                 <div>Outreach Ministry</div>
                                 <div>Men's Ministry</div>
@@ -71,12 +89,12 @@
                             </div>
                         </div>
                     </div>
-                    <div>
-                        <div class="flex items-center space-x-1 hoverElement">
+                    <div class="dropdown">
+                        <div class="flex items-center trigger cursor-pointer space-x-1">
                             <span><a href="#">Sermons</a></span>
                             <i class="bi bi-caret-down-fill" style="font-size: smaller; color: #6A5978;"></i>
                         </div>
-                        <div class="bg-white mt-4 pt-4 rounded-sm box hidden displayElement">
+                        <div class="bg-white animate-fade content hidden mt-4 pt-4 rounded-sm box">
                             <div class="px-5 pb-5 space-y-4 font-medium">
                                 <div>Daily Sermon</div>
                                 <div>Music</div>
@@ -94,9 +112,9 @@
 
         <div class="relative">
             <div class="bg-cover bg-no-repeat h-screen"style="background-image: url('./img/holybible.jpg');background-position:50% -0px;"></div>
-            <div class="absolute top-80 right-10 left-10 bottom-0">
+            <div class="absolute top-80 right-40 left-40 bottom-0">
                 <div class="container mx-auto text-white text-center">
-                    <span class="text-3xl font-semibold tracking-wider md:text-6xl xl:text-7xl 2xl:text-8xl">Let your light so shine before men.</span>
+                    <span class="text-3xl font-semibold tracking-wider md:text-6xl xl:text-7xl">Let your light so shine before men.</span>
                     <div class="pt-8 space-x-4 flex justify-center items-center font-semibold">
                         <span class="bg-[#6A5978] hover:bg-transparent hover:border hover:border-white  px-4 py-2 rounded-full cursor-pointer">About Us</span>
                         <div class="flex items-center space-x-1 cursor-pointer">
@@ -207,7 +225,7 @@
                 </div>
 
                 <div class="owl-carousel owl-theme">
-                    <div class="item" style="width: 380px;">
+                    <div class="item">
                         <div>
                             <div class="h-96 bg-cover bg-no-repeat" style="background-image: url('./img/bible.jpg');"></div>
                             <div class="text-center px-5 py-8 md:bg-white">
@@ -217,7 +235,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="item" style="width: 380px;">
+                    <div class="item">
                         <div>
                             <div class="h-96 bg-cover bg-no-repeat" style="background-image: url('./img/woodboy.jpg');"></div>
                             <div class="text-center px-5 py-8 md:bg-white">
@@ -227,7 +245,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="item" style="width: 380px;">
+                    <div class="item">
                         <div>
                             <div class="h-96 bg-cover bg-no-repeat" style="background-image: url('./img/cool.jpg');"></div>
                             <div class="text-center px-5 py-8 md:bg-white container mx-auto">
@@ -237,7 +255,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="item" style="width: 380px;">
+                    <div class="item">
                         <div>
                             <div class="h-96 bg-cover bg-no-repeat" style="background-image: url('./img/piano.jpg');"></div>
                             <div class="text-center px-5 py-8 md:bg-white">
@@ -247,7 +265,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="item" style="width: 380px;">
+                    <div class="item">
                         <div>
                             <div class="h-96 bg-cover bg-no-repeat" style="background-image: url('./img/bible.jpg');"></div>
                             <div class="text-center px-5 py-8 md:bg-white">
@@ -257,11 +275,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="item" style="width: 380px;">
+                    <div class="item">
                         <div>
-                            <div class="h-96 bg-cover bg-no-repeat" style="background-image: url('./img/woodboy.jpg');"></div>
-                            <div class="text-center px-5 py-8 md:bg-white">
-                                <span class="text-3xl">The Love Of God is Eternal</span>
+                            <div class="h-96 bg-cover bg-no-repeat" style="background-image: url('./img/cool.jpg');"></div>
+                            <div class="text-center px-5 py-8 md:bg-white container mx-auto">
+                                <span class="text-3xl ">The Truth will set us free</span>
                                 <p class="pt-2 text-slate-500">Lorem ipsum dolor, sit amet consectetur adipisicing elit. fuga qui inventore iste unde provident, consequatur magnam.</p>
                                 <h2 class="text-slate-500 font-semibold pt-2">Read More</h2>
                             </div>
@@ -528,9 +546,9 @@
         </div>
     </div>
 
+    <script src="./app.js"></script>
     <script src="https://cdn-script.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./carousel.js"></script>
-    <script src="./app.js"></script>
 </body>
 </html>
