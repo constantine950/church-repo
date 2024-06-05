@@ -1,33 +1,24 @@
-const hoverElement = document.querySelector('.hoverElement');
-const displayElement = document.querySelector('.displayElement');
-const hov = document.querySelector('.hov');
-const dis = document.querySelector('.dis');
-const dropOpen = document.querySelector('.drop-open');
-const dropDown = document.querySelector('.drop-down');
-
-dropOpen.addEventListener('click', () => {
-    dropOpen.style.borderColor = 'black';
-    if(dropDown.classList.contains('hidden')){
-        dropDown.classList.remove('hidden');
-    } else {
-        dropDown.classList.add('hidden');
+class Dropdown{
+    constructor(container){
+        this.container = container;
+        this.trigger = container.querySelector('.trigger');
+        this.content = container.querySelector('.content');
+    }
+    init(){
+        this.trigger.addEventListener('click', () => {
+            this.content.classList.toggle('hidden')
+        });
     };
+}
+
+const dropdowns = document.querySelectorAll('.dropdown');
+dropdowns.forEach(dropdown => {
+    const instance = new Dropdown(dropdown);
+    instance.init();
 });
 
-dropOpen.addEventListener('mouseleave', () => {
-    dropOpen.style.borderColor = ''
-});
-
-hov.addEventListener('mouseenter', () => {
-    dis.style.display = 'block';
-});
-hov.addEventListener('mouseleave', () => {
-    dis.style.display = 'none';
-});
-
-hoverElement.addEventListener('mouseenter', () => {
-    displayElement.style.display = 'block';
-});
-hoverElement.addEventListener('mouseleave', () => {
-    displayElement.style.display = 'none';
+const trigger_1 = document.querySelector('.trigger-1');
+const content_1 = document.querySelector('.content-1');
+trigger_1.addEventListener('click', () => {
+    content_1.classList.toggle('hidden');
 });
