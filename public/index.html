@@ -1,554 +1,834 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    <link rel="stylesheet" href="./carousel.css">
-    <link rel="stylesheet" href="./output.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./carousel.css" />
+    <link rel="stylesheet" href="./output.css" />
     <title>Church Website</title>
-</head>
-<body class="font-body animate-fade-in">
-
+  </head>
+  <body class="font-body">
     <div class="xl:px-28 xl:drop-shadow-2xl">
-        <div class="bg-[#6A5978] xl:px-28">
-            <div class="container mx-auto px-10 pt-4 pb-5 text-white md:flex md:items-center md:justify-between">
-                <div class="space-x-3 text-sm md:pt-3">
-                    <span class="hover:text-slate-300 cursor-pointer hover:transition hover:ease-linear hover:duration-500">Home</span>
-                    <span class="hover:text-slate-300 cursor-pointer">About Us</span>
-                    <span class="hover:text-slate-300 cursor-pointer">Ministries</span>
+      <div class="bg-[#6A5978] xl:px-28">
+        <div
+          class="container mx-auto px-5 pt-4 pb-5 text-white md:flex md:items-center md:justify-between"
+        >
+          <div class="space-x-3 text-sm md:pt-3">
+            <span
+              class="hover:text-slate-300 cursor-pointer hover:transition hover:ease-linear hover:duration-500"
+              >Home</span
+            >
+            <span class="hover:text-slate-300 cursor-pointer">About Us</span>
+            <span class="hover:text-slate-300 cursor-pointer">Ministries</span>
+          </div>
+          <div class="flex pt-3 space-x-5">
+            <i class="bi bi-facebook" style="cursor: pointer"></i>
+            <i class="bi bi-twitter" style="cursor: pointer"></i>
+            <i class="bi bi-instagram" style="cursor: pointer"></i>
+            <i class="bi bi-linkedin" style="cursor: pointer"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white xl:px-28">
+        <div
+          class="container mx-auto flex justify-between items-center px-5 py-2"
+        >
+          <h1 class="text-2xl cursor-pointer">Mountain Of Great Mercy</h1>
+          <div
+            class="border trigger px-2 rounded-md text-slate-500 cursor-pointer lg:hidden trigger-1"
+          >
+            <i class="bi bi-list" style="font-size: 30px"></i>
+          </div>
+
+          <div class="hidden lg:block">
+            <ul class="flex space-x-10">
+              <li class="font-bold text-[#6A5978]"><a href="#">Home</a></li>
+              <li class="space-x-1 relative dropdown">
+                <div class="cursor-pointer trigger">
+                  <a>Ministries</a>
+                  <i
+                    class="bi bi-caret-down-fill"
+                    style="font-size: smaller; color: #6a5978"
+                  ></i>
                 </div>
-                <div class="flex pt-3 space-x-5">
-                    <i class="bi bi-facebook" style="cursor: pointer;"></i>
-                    <i class="bi bi-twitter" style="cursor: pointer;"></i>
-                    <i class="bi bi-instagram" style="cursor: pointer;"></i>
-                    <i class="bi bi-linkedin" style="cursor: pointer;"></i>
+                <ul
+                  class="bg-white animate-fade content hidden absolute left-0 top-full w-48 z-10 mt-4 py-4 font-medium rounded-sm box"
+                >
+                  <li class="hover:bg-[#6A5978] hover:text-white px-4 py-2">
+                    <a href="#">Outreach Ministry</a>
+                  </li>
+                  <li class="hover:bg-[#6A5978] hover:text-white px-4 py-2">
+                    <a href="#">Men's Ministry</a>
+                  </li>
+                  <li class="hover:bg-[#6A5978] hover:text-white px-4 py-2">
+                    <a href="#">Women's Ministry</a>
+                  </li>
+                  <li class="hover:bg-[#6A5978] hover:text-white px-4 py-2">
+                    <a href="#">Children's Ministry</a>
+                  </li>
+                  <li class="hover:bg-[#6A5978] hover:text-white px-4 py-2">
+                    <a href="#">Youth Ministry</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="space-x-1 relative dropdown">
+                <div class="cursor-pointer trigger">
+                  <a href="#">Sermons</a>
+                  <i
+                    class="bi bi-caret-down-fill"
+                    style="font-size: smaller; color: #6a5978"
+                  ></i>
                 </div>
+                <ul
+                  class="bg-white animate-fade content hidden absolute left-0 top-full w-40 z-10 mt-4 py-4 font-medium rounded-sm box"
+                >
+                  <li class="hover:bg-[#6A5978] hover:text-white px-4 py-2">
+                    <a href="#">Daily Sermon</a>
+                  </li>
+                  <li class="hover:bg-[#6A5978] hover:text-white px-4 py-2">
+                    <a href="#">Music</a>
+                  </li>
+                  <li class="hover:bg-[#6A5978] hover:text-white px-4 py-2">
+                    <a href="#">Audio</a>
+                  </li>
+                  <li class="hover:bg-[#6A5978] hover:text-white px-4 py-2">
+                    <a href="#">Video</a>
+                  </li>
+                </ul>
+              </li>
+              <li><a href="#">Events</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="hidden animate-fade content-1 lg:hidden">
+          <div class="container mx-auto px-7 space-y-5 pb-5">
+            <span class="font-bold tracking-wide">Home</span>
+            <div class="dropdown">
+              <div class="flex items-center cursor-pointer trigger space-x-1">
+                <span><a href="#">Ministries</a></span>
+                <i
+                  class="bi bi-caret-down-fill"
+                  style="font-size: smaller; color: #6a5978"
+                ></i>
+              </div>
+              <div
+                class="bg-white content animate-fade hidden mt-4 pt-4 rounded-sm box"
+              >
+                <div class="px-5 pb-5 space-y-4 font-medium">
+                  <div>Outreach Ministry</div>
+                  <div>Men's Ministry</div>
+                  <div>Women's Ministry</div>
+                  <div>Children's Ministry</div>
+                  <div>Youth Ministry</div>
+                </div>
+              </div>
             </div>
+            <div class="dropdown">
+              <div class="flex items-center trigger cursor-pointer space-x-1">
+                <span><a href="#">Sermons</a></span>
+                <i
+                  class="bi bi-caret-down-fill"
+                  style="font-size: smaller; color: #6a5978"
+                ></i>
+              </div>
+              <div
+                class="bg-white animate-fade content hidden mt-4 pt-4 rounded-sm box"
+              >
+                <div class="px-5 pb-5 space-y-4 font-medium">
+                  <div>Daily Sermon</div>
+                  <div>Music</div>
+                  <div>Audio</div>
+                  <div>Video</div>
+                </div>
+              </div>
+            </div>
+            <span class="block">Events</span>
+            <span class="block">About</span>
+            <span class="block">Contact</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="relative">
+        <div
+          class="bg-cover bg-no-repeat h-screen"
+          style="
+            background-image: url('./img/holybible.jpg');
+            background-position: 50% -0px;
+          "
+        ></div>
+        <div class="absolute top-[45%] left-0 right-0">
+          <div class="container mx-auto text-white text-center">
+            <span
+              class="text-2xl font-semibold tracking-wider md:text-6xl xl:text-7xl"
+              >Let your light so shine before men.</span
+            >
+            <div
+              class="pt-8 space-x-4 flex justify-center items-center font-semibold"
+            >
+              <span
+                class="bg-[#6A5978] hover:bg-transparent hover:border hover:border-white px-4 py-1.5 rounded-full cursor-pointer"
+                >About Us</span
+              >
+              <div class="flex items-center space-x-1 cursor-pointer">
+                <i class="bi bi-geo-alt-fill"></i>
+                <span>Visit Our Church</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="bg-white px-4 py-10 drop-shadow-lg md:-mt-12 md:mx-14 md:py-7 lg:-mt-9 xl:-mt-12 lg:px-14"
+      >
+        <div
+          class="container mx-auto lg:flex lg:justify-between lg:items-center"
+        >
+          <div>
+            <span class="text-red-500 font-semibold">Latest Sermon:</span>
+            <span class="font-bold">Rebuilding The Walls</span>
+            <span class="block pt-2 text-gray-500 md:inline"
+              >Posted on June 28, 2018, Pastor John Smith</span
+            >
+          </div>
+          <div class="flex space-x-5 pt-2 text-slate-600 lg:inline-flex">
+            <i class="bi bi-camera-video-fill" style="font-size: larger"></i>
+            <i class="bi bi-headphones" style="font-size: larger"></i>
+            <i
+              class="bi bi-cloud-arrow-down-fill"
+              style="font-size: larger"
+            ></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white px-4 pb-16 lg:-mt-12 xl:px-28 xl:pb-28">
+        <div class="pt-14 drop-shadow-lg md:hidden">
+          <div class="container mx-auto relative">
+            <div class="bg-white p-1.5">
+              <div
+                class="h-96 bg-cover bg-no-repeat"
+                style="background-image: url('./img/pastor.jpg')"
+              ></div>
+            </div>
+            <div class="flex justify-center absolute top-40 left-0 right-0">
+              <div class="bg-gray-50 bg-opacity-50 rounded-full px-5 pt-3">
+                <i
+                  class="bi bi-play-fill"
+                  style="font-size: 60px; color: #6a5978"
+                ></i>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div class="bg-white xl:px-28">
-            <div class="container mx-auto flex justify-between px-7 py-4">
-                <h1 class="text-2xl cursor-pointer">Mountain Of Great Mercy</h1>
-                <div class="border trigger px-2 rounded-md text-slate-500 cursor-pointer lg:hidden trigger-1">
-                    <i class="bi bi-list" style="font-size: 30px;"></i>
-                </div>
-
-                <div class="hidden lg:block">
-                    <ul class="flex space-x-10">
-                        <li class="font-bold text-[#6A5978]"><a href="#">Home</a></li>
-                        <li class="space-x-1 relative dropdown">
-                            <div class="cursor-pointer trigger">
-                                <a>Ministries</a>
-                                <i class="bi bi-caret-down-fill" style="font-size: smaller; color: #6A5978;"></i>
-                            </div>
-                            <ul class="bg-white animate-fade content hidden absolute left-0 top-full w-48 z-10 mt-4 py-4 font-medium rounded-sm box">
-                                <li class="hover:bg-[#6A5978] hover:text-white px-4 py-2"><a href="#">Outreach Ministry</a></li>
-                                <li class="hover:bg-[#6A5978] hover:text-white px-4 py-2"><a href="#">Men's Ministry</a></li>
-                                <li class="hover:bg-[#6A5978] hover:text-white px-4 py-2"><a href="#">Women's Ministry</a></li>
-                                <li class="hover:bg-[#6A5978] hover:text-white px-4 py-2"><a href="#">Children's Ministry</a></li>
-                                <li class="hover:bg-[#6A5978] hover:text-white px-4 py-2"><a href="#">Youth Ministry</a></li>
-                            </ul>
-                        </li>
-                        <li class="space-x-1 relative dropdown">
-                            <div class="cursor-pointer trigger">
-                                <a href="#">Sermons</a>
-                                <i class="bi bi-caret-down-fill" style="font-size: smaller; color: #6A5978;"></i>
-                            </div>
-                            <ul class="bg-white animate-fade content hidden absolute left-0 top-full w-40 z-10 mt-4 py-4 font-medium rounded-sm box">
-                                <li class="hover:bg-[#6A5978] hover:text-white px-4 py-2"><a href="#">Daily Sermon</a></li>
-                                <li class="hover:bg-[#6A5978] hover:text-white px-4 py-2"><a href="#">Music</a></li>
-                                <li class="hover:bg-[#6A5978] hover:text-white px-4 py-2"><a href="#">Audio</a></li>
-                                <li class="hover:bg-[#6A5978] hover:text-white px-4 py-2"><a href="#">Video</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Events</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul> 
-                </div>
+        <div class="pt-10 lg:pt-20 xl:pt-32">
+          <div
+            class="container mx-auto md:flex md:justify-between md:items-center md:space-x-10"
+          >
+            <div class="pt-4">
+              <span class="text-gray-600 text-4xl tracking-wide"
+                >Welcome To Mountain Of Great Mercy</span
+              >
+              <p class="text-gray-500 pt-5 leading-8">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Blanditiis quas beatae temporibus mollitia eos perspiciatis nisi
+                voluptas cupiditate repellendus soluta quam porro aliquam velit,
+                vel aliquid dicta, labore, minima explicabo?
+              </p>
+              <div class="pt-5">
+                <span class="text-gray-700">Church Pastor</span>
+                <span class="font-semibold text-gray-700">A.A ODEDIRAN</span>
+              </div>
             </div>
-            <div class="hidden animate-fade content-1 lg:hidden">
-                <div class="container mx-auto px-7 space-y-5 pb-5">
-                    <span class="font-bold tracking-wide">Home</span>
-                    <div class="dropdown">
-                        <div class="flex items-center cursor-pointer trigger space-x-1">
-                            <span><a href="#">Ministries</a></span>
-                            <i class="bi bi-caret-down-fill" style="font-size: smaller; color: #6A5978;"></i>
-                        </div>
-                        <div class="bg-white content animate-fade hidden mt-4 pt-4 rounded-sm box">
-                            <div class="px-5 pb-5 space-y-4 font-medium">
-                                <div>Outreach Ministry</div>
-                                <div>Men's Ministry</div>
-                                <div>Women's Ministry</div>
-                                <div>Children's Ministry</div>
-                                <div>Youth Ministry</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="dropdown">
-                        <div class="flex items-center trigger cursor-pointer space-x-1">
-                            <span><a href="#">Sermons</a></span>
-                            <i class="bi bi-caret-down-fill" style="font-size: smaller; color: #6A5978;"></i>
-                        </div>
-                        <div class="bg-white animate-fade content hidden mt-4 pt-4 rounded-sm box">
-                            <div class="px-5 pb-5 space-y-4 font-medium">
-                                <div>Daily Sermon</div>
-                                <div>Music</div>
-                                <div>Audio</div>
-                                <div>Video</div>
-                            </div>
-                        </div>
-                    </div> 
-                    <span class="block">Events</span>
-                    <span class="block">About</span>
-                    <span class="block">Contact</span>
+            <div class="pt-4 drop-shadow-lg hidden md:block">
+              <div class="container mx-auto relative">
+                <div class="bg-white p-1.5">
+                  <div
+                    class="h-96 bg-cover bg-no-repeat md:h-64 md:w-64 lg:h-96 lg:w-96"
+                    style="background-image: url('./img/pastor.jpg')"
+                  ></div>
                 </div>
+                <div
+                  class="flex justify-center absolute top-40 md:top-24 lg:top-44 left-0 right-0"
+                >
+                  <div class="bg-gray-50 bg-opacity-50 rounded-full px-4 pt-2">
+                    <i
+                      class="bi bi-play-fill"
+                      style="font-size: 55px; color: #6a5978"
+                    ></i>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
 
-        <div class="relative">
-            <div class="bg-cover bg-no-repeat h-screen"style="background-image: url('./img/holybible.jpg');background-position:50% -0px;"></div>
-            <div class="absolute top-80 right-40 left-40 bottom-0">
-                <div class="container mx-auto text-white text-center">
-                    <span class="text-3xl font-semibold tracking-wider md:text-6xl xl:text-7xl">Let your light so shine before men.</span>
-                    <div class="pt-8 space-x-4 flex justify-center items-center font-semibold">
-                        <span class="bg-[#6A5978] hover:bg-transparent hover:border hover:border-white  px-4 py-2 rounded-full cursor-pointer">About Us</span>
-                        <div class="flex items-center space-x-1 cursor-pointer">
-                            <i class="bi bi-geo-alt-fill"></i>
-                            <span>Visit Our Church</span>
-                        </div>
-                    </div>
-                </div>
+        <div class="pt-16 xl:pt-24">
+          <div
+            class="container mx-auto md:grid md:grid-cols-2 md:items-center lg:grid lg:grid-cols-3"
+          >
+            <div>
+              <div class="bg-gray-100 px-5.5 pt-4 pb-2 rounded-full w-20">
+                <i
+                  class="bi bi-book-fill"
+                  style="font-size: 35px; color: #6a5978"
+                ></i>
+              </div>
+              <h1 class="pt-8 font-semibold">CONNECT WITH GOD</h1>
+              <p class="pt-5 text-slate-500 leading-8">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Temporibus optio dolorum deserunt blanditiis voluptate
+                perspiciatis sed veritatis
+              </p>
             </div>
+            <div class="pt-8 px-4 md:pt-0 md:px-0 lg:px-4 xl:pl-4">
+              <div class="bg-gray-200 px-5.5 pt-4 pb-2 rounded-full w-20">
+                <i
+                  class="bi bi-person-fill"
+                  style="font-size: 35px; color: #6a5978"
+                ></i>
+              </div>
+              <h1 class="pt-8 font-semibold">COME AS YOU ARE</h1>
+              <p class="pt-5 text-slate-500 leading-8">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Temporibus optio dolorum deserunt blanditiis voluptate
+                perspiciatis sed veritatis
+              </p>
+            </div>
+            <div class="pt-8 px-4 md:pt-12 lg:pt-0">
+              <div class="bg-gray-200 px-5.5 pt-4 pb-2 rounded-full w-20">
+                <i
+                  class="bi bi-heart-fill"
+                  style="font-size: 35px; color: #6a5978"
+                ></i>
+              </div>
+              <h1 class="pt-8 font-semibold">BROTHERLY LOVE</h1>
+              <p class="pt-5 text-slate-500 leading-8">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Temporibus optio dolorum deserunt blanditiis voluptate
+                perspiciatis sed veritatis
+              </p>
+            </div>
+          </div>
         </div>
+      </div>
 
-        <div class="bg-white px-4 py-10 drop-shadow-lg md:-mt-12 md:mx-14 md:py-7 lg:-mt-9 xl:-mt-12 lg:px-14">
-            <div class="container mx-auto lg:flex lg:justify-between lg:items-center">
-                <div>
-                    <span class="text-red-500 font-semibold">Latest Sermon:</span>
-                    <span class="font-bold">Rebuilding The Walls</span>
-                    <span class="block pt-2 text-gray-500 md:inline">Posted on June 28, 2018, Pastor John Smith</span>
-                </div>
-                <div class="flex space-x-5 pt-2 text-slate-600 lg:inline-flex">
-                    <i class="bi bi-camera-video-fill" style="font-size:larger;"></i>
-                    <i class="bi bi-headphones" style="font-size:larger;"></i>
-                    <i class="bi bi-cloud-arrow-down-fill" style="font-size:larger;"></i>
-                </div>
+      <div class="pt-8 md:pt-0 md:bg-slate-50">
+        <div class="bg-gray-50">
+          <div class="container mx-auto">
+            <div
+              class="flex items-center px-4 space-x-7 py-10 xl:py-14 xl:px-28"
+            >
+              <span class="text-3xl">Church Services</span>
+              <div
+                class="h-2 w-48 bg-[#6A5978] md:w-2/3 lg:w-3/4 xl:w-9/12"
+              ></div>
             </div>
+          </div>
+
+          <div class="owl-carousel owl-theme">
+            <div class="item">
+              <div>
+                <div
+                  class="h-96 bg-cover bg-no-repeat"
+                  style="background-image: url('./img/bible.jpg')"
+                ></div>
+                <div class="text-center px-5 py-8 md:bg-white">
+                  <span class="text-3xl">Bible studies like Bereans</span>
+                  <p class="pt-2 text-slate-500">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    fuga qui inventore iste unde provident, consequatur magnam.
+                  </p>
+                  <h2 class="text-slate-500 font-semibold pt-2">Read More</h2>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div>
+                <div
+                  class="h-96 bg-cover bg-no-repeat"
+                  style="background-image: url('./img/woodboy.jpg')"
+                ></div>
+                <div class="text-center px-5 py-8 md:bg-white">
+                  <span class="text-3xl">The Love Of God is Eternal</span>
+                  <p class="pt-2 text-slate-500">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    fuga qui inventore iste unde provident, consequatur magnam.
+                  </p>
+                  <h2 class="text-slate-500 font-semibold pt-2">Read More</h2>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div>
+                <div
+                  class="h-96 bg-cover bg-no-repeat"
+                  style="background-image: url('./img/cool.jpg')"
+                ></div>
+                <div
+                  class="text-center px-5 py-8 md:bg-white container mx-auto"
+                >
+                  <span class="text-3xl">The Truth will set us free</span>
+                  <p class="pt-2 text-slate-500">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    fuga qui inventore iste unde provident, consequatur magnam.
+                  </p>
+                  <h2 class="text-slate-500 font-semibold pt-2">Read More</h2>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div>
+                <div
+                  class="h-96 bg-cover bg-no-repeat"
+                  style="background-image: url('./img/piano.jpg')"
+                ></div>
+                <div class="text-center px-5 py-8 md:bg-white">
+                  <span class="text-3xl">Piano Lesson For Children</span>
+                  <p class="pt-2 text-slate-500">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    fuga qui inventore iste unde provident, consequatur magnam.
+                  </p>
+                  <h2 class="text-slate-500 font-semibold pt-2">Read More</h2>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div>
+                <div
+                  class="h-96 bg-cover bg-no-repeat"
+                  style="background-image: url('./img/bible.jpg')"
+                ></div>
+                <div class="text-center px-5 py-8 md:bg-white">
+                  <span class="text-3xl">Bible studies like Bereans</span>
+                  <p class="pt-2 text-slate-500">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    fuga qui inventore iste unde provident, consequatur magnam.
+                  </p>
+                  <h2 class="text-slate-500 font-semibold pt-2">Read More</h2>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div>
+                <div
+                  class="h-96 bg-cover bg-no-repeat"
+                  style="background-image: url('./img/cool.jpg')"
+                ></div>
+                <div
+                  class="text-center px-5 py-8 md:bg-white container mx-auto"
+                >
+                  <span class="text-3xl">The Truth will set us free</span>
+                  <p class="pt-2 text-slate-500">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    fuga qui inventore iste unde provident, consequatur magnam.
+                  </p>
+                  <h2 class="text-slate-500 font-semibold pt-2">Read More</h2>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
 
-        <div class="bg-white px-4 pb-16 lg:-mt-12 xl:px-28 xl:pb-28">
-            <div class="pt-14 drop-shadow-lg md:hidden">
-                <div class="container mx-auto relative">
-                    <div class="bg-white p-1.5">
-                        <div class="h-96 bg-cover bg-no-repeat" style="background-image:url('./img/pastor.jpg') ;"></div>
-                    </div>
-                    <div class="flex justify-center absolute top-40 left-0 right-0">
-                        <div class="bg-gray-50 bg-opacity-50 rounded-full px-5 pt-3">
-                            <i class="bi bi-play-fill" style="font-size: 60px; color: #6A5978;"></i>
-                        </div>
-                    </div>
-                </div>
+      <div class="bg-white pt-16 pb-28 xl:px-28">
+        <div
+          class="md:container md:mx-auto px-4 md:px-0 md:grid md:grid-cols-2 md:space-x-5"
+        >
+          <div class="container mx-auto">
+            <div class="flex items-center space-x-7">
+              <h1 class="text-3xl">Latest Sermons</h1>
+              <div class="h-2 w-52 md:w-32 lg:w-60 bg-[#6A5978]"></div>
             </div>
+            <div class="flex space-x-5 px-4 pt-12">
+              <div>
+                <div class="bg-white p-1.5 shadow-xl">
+                  <img
+                    class="h-32 w-24 object-cover"
+                    src="./img/hand.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div>
+                <span class="text-xl text-gray-700">Rebuilding The Walls</span>
+                <span class="block text-gray-500"
+                  >Posted on June 28, 2018, Pastor Odediran</span
+                >
+                <div class="flex items-center space-x-5 pt-4">
+                  <i
+                    class="bi bi-camera-video-fill"
+                    style="font-size: 22px; color: #6a5978"
+                  ></i>
+                  <i
+                    class="bi bi-headset"
+                    style="font-size: 22px; color: #6a5978"
+                  ></i>
+                  <i
+                    class="bi bi-cloud-arrow-down"
+                    style="font-size: 22px; color: #6a5978"
+                  ></i>
+                </div>
+              </div>
+            </div>
+            <div class="flex space-x-5 pt-10 px-4 md:pt-8 lg:pt-4">
+              <div>
+                <div class="bg-white p-1.5 shadow-xl">
+                  <img
+                    class="h-32 w-24 object-cover"
+                    src="./img/piano.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div>
+                <span class="text-xl text-gray-700"
+                  >Jonah's Message To Neniveh</span
+                >
+                <span class="block text-gray-500"
+                  >Posted on June 28, 2018, Pastor Odediran</span
+                >
+                <div class="flex items-center space-x-5 pt-4">
+                  <i
+                    class="bi bi-camera-video-fill"
+                    style="font-size: 22px; color: #6a5978"
+                  ></i>
+                  <i
+                    class="bi bi-headset"
+                    style="font-size: 22px; color: #6a5978"
+                  ></i>
+                  <i
+                    class="bi bi-cloud-arrow-down"
+                    style="font-size: 22px; color: #6a5978"
+                  ></i>
+                </div>
+              </div>
+            </div>
+            <div class="flex space-x-5 pt-10 px-4 md:pt-8 lg:pt-4">
+              <div class="bg-white p-1.5 shadow-xl">
+                <img
+                  class="h-32 w-24 object-cover"
+                  src="./img/bridge.jpg"
+                  alt=""
+                />
+              </div>
+              <div>
+                <span class="text-xl text-gray-700">New Jerusalem</span>
+                <span class="block text-gray-500"
+                  >Posted on June 28, 2018, Pastor Odediran</span
+                >
+                <div class="flex items-center space-x-5 pt-4">
+                  <i
+                    class="bi bi-camera-video-fill"
+                    style="font-size: 22px; color: #6a5978"
+                  ></i>
+                  <i
+                    class="bi bi-headset"
+                    style="font-size: 22px; color: #6a5978"
+                  ></i>
+                  <i
+                    class="bi bi-cloud-arrow-down"
+                    style="font-size: 22px; color: #6a5978"
+                  ></i>
+                </div>
+              </div>
+            </div>
+          </div>
 
-            <div class="pt-10 lg:pt-20 xl:pt-32">
-                <div class="container mx-auto md:flex md:justify-between md:items-center md:space-x-10">
-                    <div class="pt-4">
-                        <span class="text-gray-600 text-4xl tracking-wide">Welcome To Mountain Of Great Mercy</span>
-                        <p class="text-gray-500 pt-5 leading-8 pr-10">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis quas beatae temporibus mollitia eos perspiciatis nisi voluptas cupiditate repellendus soluta quam porro aliquam velit, vel aliquid dicta, labore, minima explicabo?
-                        </p>
-                        <div class="pt-5">
-                            <span class="text-gray-700">Church Pastor</span>
-                            <span class="font-semibold text-gray-700">A.A ODEDIRAN</span>
-                        </div>
-                    </div>
-                    <div class="pt-4 drop-shadow-lg hidden md:block">
-                        <div class="container mx-auto relative">
-                            <div class="bg-white p-1.5">
-                                <div class="h-96 bg-cover bg-no-repeat md:h-64 md:w-64 lg:h-96 lg:w-96" style="background-image:url('./img/pastor.jpg') ;"></div>
-                            </div>
-                            <div class="flex justify-center absolute top-40 md:top-24 lg:top-44 left-0 right-0">
-                                <div class="bg-gray-50 bg-opacity-50 rounded-full px-4 pt-2">
-                                    <i class="bi bi-play-fill" style="font-size: 55px; color: #6A5978;"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          <div class="container mx-auto pt-16 md:pt-0">
+            <div class="flex items-center space-x-7">
+              <span class="text-3xl">Latest Events</span>
+              <div class="h-2 w-60 md:w-32 lg:w-60 bg-[#6A5978]"></div>
             </div>
-
-            <div class="pt-16 xl:pt-24">
-                <div class="container mx-auto md:grid md:grid-cols-2 md:items-center lg:grid lg:grid-cols-3">
-                    <div class="px-4">
-                        <div class="bg-gray-100 px-5.5 pt-4 pb-2 rounded-full w-20">
-                            <i class="bi bi-book-fill" style="font-size: 35px; color: #6A5978;"></i>           
-                        </div>
-                        <h1 class="pt-8 font-semibold">CONNECT WITH GOD</h1> 
-                        <P class="pt-5 text-slate-500 leading-8">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus optio dolorum deserunt blanditiis voluptate perspiciatis sed veritatis
-                        </P>
-                    </div>
-                    <div class="pt-8 px-4 md:pt-0 md:px-0 lg:px-4 xl:pl-4">
-                        <div class="bg-gray-200 px-5.5 pt-4 pb-2 rounded-full w-20">
-                            <i class="bi bi-person-fill" style="font-size: 35px; color: #6A5978;"></i>
-                        </div>
-                        <h1 class="pt-8 font-semibold">COME AS YOU ARE</h1> 
-                        <P class="pt-5 text-slate-500 leading-8">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus optio dolorum deserunt blanditiis voluptate perspiciatis sed veritatis
-                        </P>
-                    </div>
-                    <div class="pt-8 px-4 md:pt-12 lg:pt-0"> 
-                        <div class="bg-gray-200 px-5.5 pt-4 pb-2 rounded-full w-20">
-                            <i class="bi bi-heart-fill" style="font-size: 35px; color: #6A5978;"></i>
-                        </div>
-                        <h1 class="pt-8 font-semibold">BROTHERLY LOVE</h1> 
-                        <P class="pt-5 text-slate-500 leading-8">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus optio dolorum deserunt blanditiis voluptate perspiciatis sed veritatis
-                        </P>
-                    </div>
+            <div class="flex space-x-5 pt-10 px-4">
+              <div>
+                <div class="bg-white p-1.5 shadow-xl">
+                  <img
+                    class="h-36 w-32 md:w-64 object-cover lg:h-48 lg:w-40"
+                    src="./img/boy.jpg"
+                    alt=""
+                  />
                 </div>
+              </div>
+              <div>
+                <span class="text-xl text-gray-600">Weekend Outreach</span>
+                <span class="block text-gray-400"
+                  >Posted on June 28, 2018, Pastor Odediran</span
+                >
+                <div class="text-gray-500 pt-1">
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Nemo fugiat ipsum temporibus
+                  </p>
+                </div>
+                <h1 class="pt-2 font-semibold text-gray-500">Read More</h1>
+              </div>
             </div>
+            <div class="flex space-x-5 pt-10 px-4">
+              <div>
+                <div class="bg-white p-1.5 shadow-xl">
+                  <img
+                    class="h-36 w-32 md:w-64 object-cover lg:h-48 lg:w-40"
+                    src="./img/lover.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div>
+                <span class="text-xl text-gray-600"
+                  >No Longer Slave To Sin</span
+                >
+                <span class="block text-gray-400"
+                  >Posted on June 28, 2018, Pastor Odediran</span
+                >
+                <p class="pt-1 text-gray-500">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo
+                  fugiat ipsum temporibus
+                </p>
+                <h1 class="pt-2 font-semibold text-gray-500">Read More</h1>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
 
-        <div class="pt-20 md:pt-0 md:bg-slate-50">
-            <div class="bg-gray-50">
-                <div class="container mx-auto">
-                    <div class="flex items-center px-4 space-x-7 py-10 xl:py-14 xl:px-28">
-                        <span class="text-3xl">Church Services</span>
-                        <div class="h-2 w-48 bg-[#6A5978] md:w-2/3 lg:w-3/4 xl:w-9/12"></div>
-                    </div>
+      <div class="bg-gray-50 pt-16 pb-28 xl:px-28">
+        <div class="container mx-auto">
+          <div class="flex items-center px-4 space-x-4 pb-14">
+            <span class="text-3xl">Change Lives</span>
+            <div class="h-2 w-60 bg-[rgb(106,89,120)] md:w-2/3 lg:w-4/5"></div>
+          </div>
+          <div class="md:grid md:grid-cols-2 lg:grid lg:grid-cols-3">
+            <div class="px-4">
+              <div class="bg-white rounded-md p-5">
+                <span class="text-lg leading-9 italic text-gray-800">
+                  " Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Officiis ea, alias tenetur quidem fuga quaerat libero fugit
+                  nemo, voluptatum ullam doloremque explicabo. Suscipit
+                  architecto at unde ipsum laboriosam recusandae nisi! "
+                </span>
+                <div class="pt-14 flex justify-end items-center space-x-20">
+                  <div>
+                    <span class="text-lg tracking-tight text-gray-800"
+                      >Marilyn Smith</span
+                    >
+                    <span class="flex justify-end text-gray-500">New York</span>
+                  </div>
+                  <img
+                    class="h-16 w-16 rounded-full object-cover"
+                    src="./img/woman.jpg"
+                    alt=""
+                  />
                 </div>
-
-                <div class="owl-carousel owl-theme">
-                    <div class="item">
-                        <div>
-                            <div class="h-96 bg-cover bg-no-repeat" style="background-image: url('./img/bible.jpg');"></div>
-                            <div class="text-center px-5 py-8 md:bg-white">
-                                <span class="text-3xl">Bible studies like Bereans</span>
-                                <p class="pt-2 text-slate-500">Lorem ipsum dolor, sit amet consectetur adipisicing elit. fuga qui inventore iste unde provident, consequatur magnam.</p>
-                                <h2 class="text-slate-500 font-semibold pt-2">Read More</h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div>
-                            <div class="h-96 bg-cover bg-no-repeat" style="background-image: url('./img/woodboy.jpg');"></div>
-                            <div class="text-center px-5 py-8 md:bg-white">
-                                <span class="text-3xl">The Love Of God is Eternal</span>
-                                <p class="pt-2 text-slate-500">Lorem ipsum dolor, sit amet consectetur adipisicing elit. fuga qui inventore iste unde provident, consequatur magnam.</p>
-                                <h2 class="text-slate-500 font-semibold pt-2">Read More</h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div>
-                            <div class="h-96 bg-cover bg-no-repeat" style="background-image: url('./img/cool.jpg');"></div>
-                            <div class="text-center px-5 py-8 md:bg-white container mx-auto">
-                                <span class="text-3xl ">The Truth will set us free</span>
-                                <p class="pt-2 text-slate-500">Lorem ipsum dolor, sit amet consectetur adipisicing elit. fuga qui inventore iste unde provident, consequatur magnam.</p>
-                                <h2 class="text-slate-500 font-semibold pt-2">Read More</h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div>
-                            <div class="h-96 bg-cover bg-no-repeat" style="background-image: url('./img/piano.jpg');"></div>
-                            <div class="text-center px-5 py-8 md:bg-white">
-                                <span class="text-3xl">Piano Lesson For Children</span>
-                                <p class="pt-2 text-slate-500">Lorem ipsum dolor, sit amet consectetur adipisicing elit. fuga qui inventore iste unde provident, consequatur magnam.</p>
-                                <h2 class="text-slate-500 font-semibold pt-2">Read More</h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div>
-                            <div class="h-96 bg-cover bg-no-repeat" style="background-image: url('./img/bible.jpg');"></div>
-                            <div class="text-center px-5 py-8 md:bg-white">
-                                <span class="text-3xl">Bible studies like Bereans</span>
-                                <p class="pt-2 text-slate-500">Lorem ipsum dolor, sit amet consectetur adipisicing elit. fuga qui inventore iste unde provident, consequatur magnam.</p>
-                                <h2 class="text-slate-500 font-semibold pt-2">Read More</h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div>
-                            <div class="h-96 bg-cover bg-no-repeat" style="background-image: url('./img/cool.jpg');"></div>
-                            <div class="text-center px-5 py-8 md:bg-white container mx-auto">
-                                <span class="text-3xl ">The Truth will set us free</span>
-                                <p class="pt-2 text-slate-500">Lorem ipsum dolor, sit amet consectetur adipisicing elit. fuga qui inventore iste unde provident, consequatur magnam.</p>
-                                <h2 class="text-slate-500 font-semibold pt-2">Read More</h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
-        </div>
-
-        <div class=" bg-white pt-16 pb-28 xl:px-28">
-            <div class="md:container md:mx-auto px-4 md:px-0 md:grid md:grid-cols-2 md:space-x-5">
-                <div class="container mx-auto">
-                    <div class="flex items-center space-x-7">
-                        <h1 class="text-3xl">Latest Sermons</h1>
-                        <div class="h-2 w-52 md:w-32 lg:w-60 bg-[#6A5978]"></div> 
-                    </div>
-                    <div class="flex space-x-5 px-4 pt-12">
-                        <div>
-                            <div class="bg-white p-1.5 shadow-xl">
-                            <img class="h-32 w-24 object-cover" src="./img/hand.jpg" alt="">
-                            </div>
-                        </div>
-                        <div>
-                            <span class="text-xl text-gray-700">Rebuilding The Walls</span>
-                            <span class="block text-gray-500">Posted on June 28, 2018, Pastor Odediran</span>
-                            <div class="flex items-center space-x-5 pt-4">
-                                <i class="bi bi-camera-video-fill" style="font-size: 22px; color: #6A5978;"></i>
-                                <i class="bi bi-headset" style="font-size: 22px; color: #6A5978;"></i> 
-                                <i class="bi bi-cloud-arrow-down" style="font-size: 22px; color: #6A5978;"></i>                        
-                            </div>
-                        </div> 
-                    </div>
-                    <div class="flex space-x-5 pt-10 px-4 md:pt-8 lg:pt-4">
-                        <div>
-                        <div class="bg-white p-1.5 shadow-xl">
-                            <img class="h-32 w-24 object-cover" src="./img/piano.jpg" alt="">
-                        </div>
-                        </div>
-                        <div>
-                            <span class="text-xl text-gray-700">Jonah's Message To Neniveh</span>
-                            <span class="block text-gray-500">Posted on June 28, 2018, Pastor Odediran</span>
-                            <div class="flex items-center space-x-5 pt-4">
-                                <i class="bi bi-camera-video-fill" style="font-size: 22px; color: #6A5978;"></i>
-                                <i class="bi bi-headset" style="font-size: 22px; color: #6A5978;"></i> 
-                                <i class="bi bi-cloud-arrow-down" style="font-size: 22px; color: #6A5978;"></i>                        
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flex space-x-5 pt-10 px-4 md:pt-8 lg:pt-4">
-                        <div class="bg-white p-1.5 shadow-xl">
-                        <img class="h-32 w-24 object-cover" src="./img/bridge.jpg" alt="">
-                        </div>
-                        <div>
-                            <span class="text-xl text-gray-700">New Jerusalem</span>
-                            <span class="block text-gray-500">Posted on June 28, 2018, Pastor Odediran</span>
-                            <div class="flex items-center space-x-5 pt-4">
-                                <i class="bi bi-camera-video-fill" style="font-size: 22px; color: #6A5978;"></i>
-                                <i class="bi bi-headset" style="font-size: 22px; color: #6A5978;"></i> 
-                                <i class="bi bi-cloud-arrow-down" style="font-size: 22px; color: #6A5978;"></i>                        
-                            </div>
-                        </div>
-                    </div>
+            <div class="px-4 pt-12 md:pt-0">
+              <div class="bg-white rounded-md p-5">
+                <span class="text-lg leading-9 italic text-gray-800">
+                  " Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Officiis ea, alias tenetur quidem fuga quaerat libero fugit
+                  nemo, voluptatum ullam doloremque explicabo. Suscipit
+                  architecto at unde ipsum laboriosam recusandae nisi! "
+                </span>
+                <div class="pt-14 flex justify-end items-center space-x-20">
+                  <div>
+                    <span class="text-lg tracking-tight text-gray-800"
+                      >Evans Roosbelt</span
+                    >
+                    <span class="flex justify-end text-gray-500">London</span>
+                  </div>
+                  <img
+                    class="h-16 w-16 rounded-full object-cover"
+                    src="./img/mansuit.jpg"
+                    alt=""
+                  />
                 </div>
-
-                <div class="container mx-auto pt-16 md:pt-0">
-                    <div class="flex items-center space-x-7">
-                        <span class="text-3xl">Latest Events</span>
-                        <div class="h-2 w-60 md:w-32 lg:w-60 bg-[#6A5978]"></div>
-                    </div>
-                    <div class="flex space-x-5 pt-10 px-4">
-                        <div>
-                            <div class="bg-white p-1.5 shadow-xl">
-                                <img class=" h-36 w-32 md:w-64 object-cover lg:h-48 lg:w-40" src="./img/boy.jpg" alt="">
-                            </div>
-                        </div>
-                        <div>
-                            <span class="text-xl text-gray-600">Weekend Outreach</span>
-                            <span class="block text-gray-400">Posted on June 28, 2018, Pastor Odediran</span>
-                            <div class="text-gray-500 pt-1">
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo fugiat ipsum temporibus</p>
-                            </div>
-                            <h1 class="pt-2 font-semibold text-gray-500">Read More</h1>
-                        </div>
-                    </div>
-                    <div class="flex space-x-5 pt-10 px-4">
-                        <div>
-                            <div class="bg-white p-1.5 shadow-xl">
-                                <img class="h-36 w-32 md:w-64 object-cover lg:h-48 lg:w-40" src="./img/lover.jpg" alt="">
-                            </div>
-                        </div>
-                        <div>
-                            <span class="text-xl text-gray-600">No Longer Slave To Sin</span>
-                            <span class="block text-gray-400">Posted on June 28, 2018, Pastor Odediran</span>
-                            <p class="pt-1 text-gray-500">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo fugiat ipsum temporibus</p> 
-                            <h1 class="pt-2 font-semibold text-gray-500">Read More</h1>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
-        </div>
-
-        <div class=" bg-gray-50 pt-16 pb-28 xl:px-28">
-            <div class="container mx-auto">
-                <div class="flex items-center px-4 space-x-4 pb-14">
-                    <span class="text-3xl">Change Lives</span>
-                    <div class="h-2 w-60 bg-[rgb(106,89,120)] md:w-2/3 lg:w-4/5"></div>
+            <div class="px-4 pt-12 lg:pt-0 xl:max-w-none">
+              <div class="bg-white rounded-md p-5">
+                <span class="text-lg leading-9 italic text-gray-800">
+                  " Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Officiis ea, alias tenetur quidem fuga quaerat libero fugit
+                  nemo, voluptatum ullam doloremque explicabo. Suscipit
+                  architecto at unde ipsum laboriosam recusandae nisi! "
+                </span>
+                <div class="pt-14 flex justify-end items-center space-x-20">
+                  <div>
+                    <span class="text-lg tracking-tight text-gray-800"
+                      >Martin Robert</span
+                    >
+                    <span class="flex justify-end text-gray-500">New York</span>
+                  </div>
+                  <img
+                    class="h-16 w-16 rounded-full object-cover"
+                    src="./img/glassmn.jpg"
+                    alt=""
+                  />
                 </div>
-                <div class="md:grid md:grid-cols-2 lg:grid lg:grid-cols-3">
-                    <div class="px-4">
-                        <div class="bg-white rounded-md p-5">
-                            <span class="text-lg leading-9 italic text-gray-800">
-                            " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis ea, alias tenetur quidem fuga quaerat libero fugit nemo, voluptatum ullam doloremque explicabo. Suscipit architecto at unde ipsum laboriosam recusandae nisi! "
-                            </span>
-                            <div class="pt-14 flex justify-end items-center space-x-20">
-                                <div>
-                                <span class="text-lg tracking-tight text-gray-800">Marilyn Smith</span>
-                                <span class="flex justify-end text-gray-500">New York</span>
-                                </div>
-                                <img class="h-16 w-16 rounded-full object-cover" src="./img/woman.jpg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="px-4 pt-12 md:pt-0">
-                        <div class="bg-white rounded-md p-5">
-                            <span class="text-lg leading-9 italic text-gray-800">
-                            " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis ea, alias tenetur quidem fuga quaerat libero fugit nemo, voluptatum ullam doloremque explicabo. Suscipit architecto at unde ipsum laboriosam recusandae nisi! "
-                            </span>
-                            <div class="pt-14 flex justify-end items-center space-x-20">
-                                <div>
-                                <span class="text-lg tracking-tight text-gray-800">Evans Roosbelt</span>
-                                <span class="flex justify-end text-gray-500">London</span>
-                                </div>
-                                <img class="h-16 w-16 rounded-full object-cover" src="./img/mansuit.jpg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="px-4 pt-12 lg:pt-0 xl:max-w-none">
-                        <div class="bg-white rounded-md p-5">
-                            <span class="text-lg leading-9 italic text-gray-800">
-                            " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis ea, alias tenetur quidem fuga quaerat libero fugit nemo, voluptatum ullam doloremque explicabo. Suscipit architecto at unde ipsum laboriosam recusandae nisi! "
-                            </span>
-                            <div class="pt-14 flex justify-end items-center space-x-20">
-                                <div>
-                                <span class="text-lg tracking-tight text-gray-800">Martin Robert</span>
-                                <span class="flex justify-end text-gray-500">New York</span>
-                                </div>
-                                <img class="h-16 w-16 rounded-full object-cover" src="./img/glassmn.jpg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
 
-        <div class="bg-[#6A5978] px-4 pt-20 border-b border-zinc-500 pb-32 xl:px-28">
-            <div class="container mx-auto text-white">
-                <div class="md:grid md:grid-cols-2 md:gap-7 lg:grid lg:grid-cols-3 lg:gap-0">
-                    <div>
-                        <span class="font-bold text-sm tracking-wider">CHURCH QUICK LINKS</span>
-                        <div class="md:grid md:grid-cols-3 lg:gap-5">
-                            <div class="pt-12 md:w-20 lg:w-32">
-                                <ul class="space-y-2 lg:space-y-4 lg:tracking-tight">
-                                    <li><a href="#">Men's Ministry</a></li>
-                                    <li><a href="#">Women's Ministry</a></li>
-                                    <li><a href="#">Children Ministry</a></li>
-                                    <li><a href="#">Youth Ministry</a></li>
-                                </ul>
-                            </div>
-                            <div class="pt-5 md:pt-12 md:w-20 lg:w-48 lg:pl-7">
-                                <ul class="space-y-2 lg:space-y-4 lg:tracking-tight">
-                                    <li><a href="#">Senior Adult Ministry</a></li>
-                                    <li><a href="#">Marriage Ministries</a></li>
-                                    <li><a href="#">Missions & Outreach</a></li>
-                                    <li><a href="#">Prayer Ministry</a></li>
-                                </ul>
-                            </div>
-                            <div class="pt-5 md:pt-12 md:w-20 lg:w-48 lg:pl-20">
-                                <ul class="space-y-2 lg:space-y-4 lg:tracking-tight">
-                                    <li><a href="#">About Us</a></li>
-                                    <li><a href="#">Location</a></li>
-                                    <li><a href="#">Contact</a></li>
-                                    <li><a href="#">Privacy & Policy</a></li>
-                                </ul>
-                            </div> 
-                        </div> 
-                    </div>
-                    <div class="pt-16 md:pt-0 lg:ml-28">
-                        <span class="text-sm font-bold tracking-wider ">EVENTS</span>
-                        <span class="block pt-10 text-xl">Consectetur Adipisicing Elit</span>
-                        <div class="flex space-x-3 text-zinc-300 pt-2">
-                            <div class="flex items-center space-x-1">
-                                <i class="bi bi-calendar4" style="font-size: smaller;"></i>
-                                <span class="text-sm">May 29, 2023</span>
-                            </div>
-                            <div class="flex space-x-0.5 items-center">
-                                <i class="bi bi-person" style="font-size:large;"></i>
-                                <span class="text-sm">Admin</span>                  
-                            </div>
-                            <div class="flex space-x-1 items-center">
-                                <i class="bi bi-chat" style="font-size: small;"></i>
-                                <span class="text-sm">19</span>                  
-                            </div>
-                        </div>
-                        <span class="block pt-7 text-xl">Dolore Tempora Consequatur</span>
-                        <div class="flex space-x-3 text-zinc-300 pt-2">
-                            <div class="flex items-center space-x-1">
-                                <i class="bi bi-calendar4" style="font-size: smaller;"></i>
-                                <span class="text-sm">May 29, 2023</span>
-                            </div>
-                            <div class="flex space-x-0.5 items-center">
-                                <i class="bi bi-person" style="font-size:large;"></i>
-                                <span class="text-sm">Admin</span>                  
-                            </div>
-                            <div class="flex space-x-1 items-center">
-                                <i class="bi bi-chat" style="font-size: small;"></i>
-                                <span class="text-sm">19</span>                  
-                            </div>
-                        </div>
-                        <span class="block pt-7 text-xl">Perferendis eum illum</span>
-                        <div class="flex space-x-3 text-zinc-300 pt-2">
-                            <div class="flex items-center space-x-1">
-                                <i class="bi bi-calendar4" style="font-size: smaller;"></i>
-                                <span class="text-sm">May 29, 2023</span>
-                            </div>
-                            <div class="flex space-x-0.5 items-center">
-                                <i class="bi bi-person" style="font-size:large;"></i>
-                                <span class="text-sm">Admin</span>                  
-                            </div>
-                            <div class="flex space-x-1 items-center">
-                                <i class="bi bi-chat" style="font-size: small;"></i>
-                                <span class="text-sm">19</span>                  
-                            </div>
-                        </div>
-                    </div>
-                    <div class="pt-16 lg:pt-0 lg:pl-8">
-                        <span class="font-bold">CONTACT INFORMATION</span>
-                        <div class="pt-5 flex items-center space-x-6">
-                            <i class="bi bi-geo-alt-fill"></i>
-                            <span>203 Fake St. Mountain View, San Francisco, California, USA</span>
-                        </div>
-                        <div class="pt-5 flex items-center space-x-6 lg:pt-4">
-                            <i class="bi bi-telephone-fill"></i>
-                            <span>+2 393 9999 210</span>
-                        </div>
-                        <div class="pt-8 flex items-center space-x-6"> 
-                            <i class="bi bi-envelope-fill" style="font-size: large;"></i>                 
-                            <span>info@yourdomain.com</span>
-                        </div>
-                    </div>
+      <div
+        class="bg-[#6A5978] px-4 pt-20 border-b border-zinc-500 pb-32 xl:px-28"
+      >
+        <div class="container mx-auto text-white">
+          <div
+            class="md:grid md:grid-cols-2 md:gap-7 lg:grid lg:grid-cols-3 lg:gap-0"
+          >
+            <div>
+              <span class="font-bold text-sm tracking-wider"
+                >CHURCH QUICK LINKS</span
+              >
+              <div class="md:grid md:grid-cols-3 lg:gap-5">
+                <div class="pt-12 md:w-20 lg:w-32">
+                  <ul class="space-y-2 lg:space-y-4 lg:tracking-tight">
+                    <li><a href="#">Men's Ministry</a></li>
+                    <li><a href="#">Women's Ministry</a></li>
+                    <li><a href="#">Children Ministry</a></li>
+                    <li><a href="#">Youth Ministry</a></li>
+                  </ul>
                 </div>
+                <div class="pt-5 md:pt-12 md:w-20 lg:w-48 lg:pl-7">
+                  <ul class="space-y-2 lg:space-y-4 lg:tracking-tight">
+                    <li><a href="#">Senior Adult Ministry</a></li>
+                    <li><a href="#">Marriage Ministries</a></li>
+                    <li><a href="#">Missions & Outreach</a></li>
+                    <li><a href="#">Prayer Ministry</a></li>
+                  </ul>
+                </div>
+                <div class="pt-5 md:pt-12 md:w-20 lg:w-48 lg:pl-20">
+                  <ul class="space-y-2 lg:space-y-4 lg:tracking-tight">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Location</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Privacy & Policy</a></li>
+                  </ul>
+                </div>
+              </div>
             </div>
+            <div class="pt-16 md:pt-0 lg:ml-28">
+              <span class="text-sm font-bold tracking-wider">EVENTS</span>
+              <span class="block pt-10 text-xl"
+                >Consectetur Adipisicing Elit</span
+              >
+              <div class="flex space-x-3 text-zinc-300 pt-2">
+                <div class="flex items-center space-x-1">
+                  <i class="bi bi-calendar4" style="font-size: smaller"></i>
+                  <span class="text-sm">May 29, 2023</span>
+                </div>
+                <div class="flex space-x-0.5 items-center">
+                  <i class="bi bi-person" style="font-size: large"></i>
+                  <span class="text-sm">Admin</span>
+                </div>
+                <div class="flex space-x-1 items-center">
+                  <i class="bi bi-chat" style="font-size: small"></i>
+                  <span class="text-sm">19</span>
+                </div>
+              </div>
+              <span class="block pt-7 text-xl">Dolore Tempora Consequatur</span>
+              <div class="flex space-x-3 text-zinc-300 pt-2">
+                <div class="flex items-center space-x-1">
+                  <i class="bi bi-calendar4" style="font-size: smaller"></i>
+                  <span class="text-sm">May 29, 2023</span>
+                </div>
+                <div class="flex space-x-0.5 items-center">
+                  <i class="bi bi-person" style="font-size: large"></i>
+                  <span class="text-sm">Admin</span>
+                </div>
+                <div class="flex space-x-1 items-center">
+                  <i class="bi bi-chat" style="font-size: small"></i>
+                  <span class="text-sm">19</span>
+                </div>
+              </div>
+              <span class="block pt-7 text-xl">Perferendis eum illum</span>
+              <div class="flex space-x-3 text-zinc-300 pt-2">
+                <div class="flex items-center space-x-1">
+                  <i class="bi bi-calendar4" style="font-size: smaller"></i>
+                  <span class="text-sm">May 29, 2023</span>
+                </div>
+                <div class="flex space-x-0.5 items-center">
+                  <i class="bi bi-person" style="font-size: large"></i>
+                  <span class="text-sm">Admin</span>
+                </div>
+                <div class="flex space-x-1 items-center">
+                  <i class="bi bi-chat" style="font-size: small"></i>
+                  <span class="text-sm">19</span>
+                </div>
+              </div>
+            </div>
+            <div class="pt-16 lg:pt-0 lg:pl-8">
+              <span class="font-bold">CONTACT INFORMATION</span>
+              <div class="pt-5 flex items-center space-x-6">
+                <i class="bi bi-geo-alt-fill"></i>
+                <span
+                  >203 Fake St. Mountain View, San Francisco, California,
+                  USA</span
+                >
+              </div>
+              <div class="pt-5 flex items-center space-x-6 lg:pt-4">
+                <i class="bi bi-telephone-fill"></i>
+                <span>+2 393 9999 210</span>
+              </div>
+              <div class="pt-8 flex items-center space-x-6">
+                <i class="bi bi-envelope-fill" style="font-size: large"></i>
+                <span>info@yourdomain.com</span>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
 
-        <div class="bg-[#6A5978] px-4 pt-10 pb-28 xl:px-28">
-            <div class="container mx-auto text-white text-center md:flex md:justify-between md:items-center lg:flex lg:justify-between lg:items-center">
-                <span>Copyright &copy;2023 All rights reserved</span>
-                <div class="flex justify-center pt-5 space-x-5">
-                    <i class="bi bi-facebook" style="font-size: large;"></i>
-                    <i class="bi bi-twitter" style="font-size: large;"></i>
-                    <i class="bi bi-instagram" style="font-size: large;"></i>
-                    <i class="bi bi-linkedin" style="font-size: large;"></i>
-                </div>
-            </div>
+      <div class="bg-[#6A5978] px-4 pt-10 pb-28 xl:px-28">
+        <div
+          class="container mx-auto text-white text-center md:flex md:justify-between md:items-center lg:flex lg:justify-between lg:items-center"
+        >
+          <span>Copyright &copy;2023 All rights reserved</span>
+          <div class="flex justify-center pt-5 space-x-5">
+            <i class="bi bi-facebook" style="font-size: large"></i>
+            <i class="bi bi-twitter" style="font-size: large"></i>
+            <i class="bi bi-instagram" style="font-size: large"></i>
+            <i class="bi bi-linkedin" style="font-size: large"></i>
+          </div>
         </div>
+      </div>
     </div>
 
     <script src="./app.js"></script>
     <script src="https://cdn-script.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="./carousel.js"></script>
-</body>
+  </body>
 </html>
